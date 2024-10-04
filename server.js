@@ -18,7 +18,7 @@ const limiter = rateLimit({
 app.use(limiter);
 
 const corsOptions = {
-  origin: "http://example.com",
+  origin: "*",
   optionsSuccessStatus: 200,
 };
 app.use(cors(corsOptions));
